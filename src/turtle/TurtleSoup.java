@@ -103,10 +103,7 @@ public class TurtleSoup {
     public static double calculateHeadingToPoint(double currentHeading, int currentX, int currentY,
                                                  int targetX, int targetY) {
        
-    	//throw new RuntimeException("implement me!");
-    	//System.out.println("*-*-*-*-*-*-*-*-*-*-*-"+Math.toDegrees(Math.atan2(targetX-currentX, targetY-currentY)));
-    	//System.out.println("*-*-*-*-*-*-*-*-*-*-*-"+Math.atan2(targetX-currentX, targetY-currentY));
-    	if(currentHeading != 0)
+        	if(currentHeading != 0)
     		return  360 - currentHeading;
         return  Math.toDegrees(Math.atan2(targetX-currentX, targetY-currentY));
     }
@@ -129,7 +126,7 @@ public class TurtleSoup {
        // throw new RuntimeException("implement me!");
         List<Double> headings = new ArrayList<>();
         for(int i=0; i<yCoords.size(); i++){
-        	//headings.add(calculateHeadingToPoint())
+        	
         	if(i > 0){
         		headings.add(calculateHeadingToPoint(0.0,xCoords.get(i-1),yCoords.get(i-1),xCoords.get(i),yCoords.get(i)));
         	}
@@ -160,11 +157,13 @@ public class TurtleSoup {
         DrawableTurtle turtle = new DrawableTurtle();
         
         //TurtleSoup tSoup = new TurtleSoup();
-        TurtleSoup.drawRegularPolygon(turtle, 4 , 100);
-        //drawSquare(turtle, 100);
+        /* test pour le cas du polygone*/
+      //  TurtleSoup.drawRegularPolygon(turtle, 5 , 100);
+       
+        drawSquare(turtle, 100);
 
         // draw the window
-       // turtle.draw();
+       turtle.draw();
         
     }
 
