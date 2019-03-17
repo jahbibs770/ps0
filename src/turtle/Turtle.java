@@ -27,7 +27,7 @@ public interface Turtle {
      * @param degrees amount of change in angle, in degrees, with positive being clockwise
      */
     public void turn(double degrees);
-
+   
     /**
      * Change the turtle's current pen color.
      * 
