@@ -143,7 +143,12 @@ public class TurtleSoup {
      * @param turtle the turtle context
      */
     public static void drawPersonalArt(Turtle turtle) {
-        throw new RuntimeException("implement me!");
+       // throw new RuntimeException("implement me!");
+    	for(int i=0;i<10;i++){
+    		drawRegularPolygon(turtle,25,25);
+    		turtle.forward(100);
+    		turtle.turn(180-calculateRegularPolygonAngle(7));
+    	}
     }
 
     /**
@@ -160,8 +165,8 @@ public class TurtleSoup {
         /* test pour le cas du polygone*/
       //  TurtleSoup.drawRegularPolygon(turtle, 5 , 100);
        
-        drawSquare(turtle, 100);
-
+       // drawSquare(turtle, 100);
+        drawPersonalArt(turtle);	
         // draw the window
        turtle.draw();
         
