@@ -37,6 +37,9 @@ Partie 2 : Turtle Graphics
 •	Polygones et titres
  
 •	Art Personnel 
+
+
+les captures se trouvent dans le fichier dp
  
 
 •	Evolution du travail avec les Test Unitaires (Classe TurtleSoupTest.java)
