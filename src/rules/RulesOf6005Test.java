@@ -5,7 +5,7 @@ package rules;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.Test; 
 
 /**
  * JUnit tests for RulesOf6005.
