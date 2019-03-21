@@ -76,7 +76,7 @@ public class TurtleSoup {
       //  throw new RuntimeException("implement me!");
     	for(int i=0; i< sides ; i++){
     		turtle.forward(sideLength);
-    		turtle.turn(calculateRegularPolygonAngle(sides));
+    		turtle.turn(180-calculateRegularPolygonAngle(sides));
     	}
     	turtle.draw();
     }
@@ -163,10 +163,11 @@ public class TurtleSoup {
         
         //TurtleSoup tSoup = new TurtleSoup();
         /* test pour le cas du polygone*/
-      //  TurtleSoup.drawRegularPolygon(turtle, 5 , 100);
-       
-       // drawSquare(turtle, 100);
-        drawPersonalArt(turtle);	
+       //TurtleSoup.drawRegularPolygon(turtle, 5 , 100);
+       /* test pour Carré*/
+       //drawSquare(turtle, 100);
+       /* Test pour l'Art Personnel*/
+       drawPersonalArt(turtle);	
         // draw the window
        turtle.draw();
         
